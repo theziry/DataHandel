@@ -14,6 +14,8 @@ import time as t
 #from lmfit import Model
 from scipy import integrate
 import scipy.optimize
+from lmfit import Model
+from lmfit import Minimizer, Parameters, report_fit
 from scipy.optimize import curve_fit
 #_____________________________________________
 plt.close("all")
