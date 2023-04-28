@@ -249,6 +249,7 @@ for i in range(len(FillNumber)):
     ax.set_xlabel(r'Times [$\mathrm{h}$]')
     #ax.set_ylabel(" Luminosity [$\mathrm{10}^{34}{cm}^{2}{s}^{-1}$]")
     ax.set_ylabel('${L}/{L_i}$')
+    ax.set_title('Normlized Luminosity 20{}'.format(str(year)))
     # Normalizer
     norm = mpl.colors.Normalize(vmin=6638, vmax=7334) 
     # creating ScalarMappable
@@ -258,7 +259,7 @@ for i in range(len(FillNumber)):
     plt.colorbar(sm, ticks=np.linspace(6600, 7400, 9))
     #ax.set_title('Luminosity evolution of fill {}'.format(text))
     fig.tight_layout()
-    plt.savefig('Time_Norm_Lumi_{}.pdf'.format(str(year)))
+    plt.savefig('{}_Time_Norm_Lumi.pdf'.format(str(year)))
                             
 
     plt.close("all")
